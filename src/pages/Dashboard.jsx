@@ -1,11 +1,17 @@
 import Footer from "../components/Dashborad/Footer/Footer";
 import Navbar from "../components/Dashborad/Navbar/Navbar";
+import Sidebar from "../components/Dashborad/Sidebar/Sidebar";
 
 function Dashboard() {
   return (
     <>
       <Navbar adminName="mohamed" />
-      <h1>Test Dashboard</h1>
+      <div className="d-flex">
+        <Sidebar />
+        <main className="flex-grow-1">
+          <h1>Test Dashboard</h1>
+        </main>
+      </div>
       <Footer />
     </>
   );
