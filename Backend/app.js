@@ -21,9 +21,11 @@ connectedDB();
 
 const adminRoutes = require("./routes/auth.route");
 const userRoutes = require("./routes/user.route");
+const userAuthRoutes = require("./routes/authUser.route");
 
 app.use("/api/dashboard", adminRoutes);
 app.use("/api/dashboard/users", userRoutes);
+app.use("/api/users", userAuthRoutes);
 
 // Port
 const port = process.env.PORT || 3000;
