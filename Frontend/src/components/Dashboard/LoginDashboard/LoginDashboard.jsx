@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import styles from "./LoginDashboard.module.css";
 
 function LoginDashboard() {
+  // Layer 1 => (states & Global Data)
+  // layer 2 => (Effects) => Call Api
+  // Layer 3 => (Handler)
+  // Layer 4 => JSX
   return (
     <div className="container min-vh-100 d-flex align-items-center justify-content-center">
       <div className={styles.loginWrapper}>
